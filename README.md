@@ -7,7 +7,7 @@ pipeline {
         stage('git repo & clean') {
             steps {
                 bat "rmdir /s /q mavenjen || exit 0"   // remove old checkout if exists (Windows safe)
-                bat "git clone https://github.com/kpavithrachowdary/mavenjen.git"
+                bat "git clone https://github.com/akhilakatakam1/mavenjen.git"
                 dir('mavenjen') {
                     bat "mvn clean"
                 }
